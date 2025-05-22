@@ -1,0 +1,111 @@
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  .login-card {
+    background: white;
+    border: 1px solid #dbdbdb;
+    padding: 2rem;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+    .logo {
+      font-family: 'Grand Hotel', cursive;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      input {
+        padding: 0.7rem;
+        border: 1px solid #dbdbdb;
+        border-radius: 0.2rem;
+        background: #fafafa;
+        font-size: 0.9rem;
+      }
+
+      button {
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+        background-color: #0095f6;
+        color: white;
+        border: none;
+        border-radius: 0.3rem;
+        cursor: pointer;
+
+        &:hover:not(:disabled) {
+          background-color: #0077cc;
+        }
+      }
+
+      button:disabled {
+        background-color: #b2dffc;
+        cursor: not-allowed;
+      }
+    }
+
+    .divider {
+      color: #8e8e8e;
+      margin: 1rem 0;
+      position: relative;
+
+      &::before, &::after {
+        content: '';
+        height: 1px;
+        background-color: #dbdbdb;
+        position: absolute;
+        top: 50%;
+        width: 45%;
+      }
+
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+      }
+    }
+
+    .login-facebook {
+      a {
+        color: #385185;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+
+    .forgot-password {
+      display: block;
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      text-decoration: none;
+      color: #00376b;
+    }
+  }
+
+  .signup-link {
+    margin-top: 1rem;
+    border: 1px solid #dbdbdb;
+    background: white;
+    padding: 1rem;
+    width: 350px;
+    text-align: center;
+
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      color: #0095f6;
+    }
+  }
+}

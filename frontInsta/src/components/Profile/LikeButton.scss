@@ -1,0 +1,44 @@
+.like-section {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+
+  .like-button {
+    display: flex;
+    align-items: center;
+    background-color: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 9999px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    color: #4a5568;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: #edf2f7;
+    }
+
+    &.liked {
+      background-color: #fed7e2;
+      color: #d53f8c;
+      border-color: #fed7e2;
+
+      &:hover {
+        background-color: #fbb6ce;
+      }
+    }
+
+    &:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+  }
+
+  .likes-count {
+    font-size: 0.9rem;
+    color: #718096;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,101 @@
+.search-page {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.search-page h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #262626;
+}
+
+.search-page input {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 1rem;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.search-page input:focus {
+  border-color: #a8a8a8;
+}
+
+.search-page ul {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+
+.search-page li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-page li:hover {
+  background-color: #f0f0f0;
+}
+
+.search-page li .content {
+  display: flex;
+  align-items: center;
+}
+
+.search-page li .content img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.search-page li .content span {
+  margin-left: 12px;
+  font-weight: 500;
+  color: #262626;
+}
+
+.search-page button {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #bd5806;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.search-page button:hover {
+  background-color: #d36003;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+
+  button {
+    flex: 1;
+    padding: 0.5rem 1rem;
+  }
+}

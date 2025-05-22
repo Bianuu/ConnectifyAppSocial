@@ -1,0 +1,271 @@
+.profile-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #333;
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    animation: slideDown 0.5s ease-in-out;
+
+    .profile-pic-wrapper {
+      margin-right: 1.5rem;
+
+      .profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #dbdbdb;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    .profile-info-wrapper {
+      flex: 1;
+
+      .profile-top-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        .profile-username {
+          font-size: 28px;
+          font-weight: 300;
+          margin-right: 1rem;
+        }
+
+        .edit-profile-btn {
+          padding: 0.5rem 1rem;
+          border: 1px solid #dbdbdb;
+          border-radius: 4px;
+          background-color: #3897f0;
+          cursor: pointer;
+          font-size: 14px;
+          transition: background-color 0.3s ease, transform 0.3s ease;
+          color: #fff;
+
+          &:hover {
+            background-color: #2c81d0;
+            transform: translateY(-2px);
+          }
+        }
+      }
+
+      .profile-meta {
+        .profile-meta-item {
+          margin: 0.2rem 0;
+          font-size: 16px;
+
+          strong {
+            margin-right: 0.3rem;
+          }
+        }
+      }
+    }
+  }
+
+  .edit-profile-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .edit-info-card,
+  .edit-image-card {
+    flex: 1;
+    background-color: #fafafa;
+    padding: 1.5rem;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+
+  .edit-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    label {
+      width: 130px;
+      font-weight: 600;
+      margin-right: 1rem;
+    }
+
+    input,
+    textarea {
+      flex: 1;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        outline: none;
+        border-color: #3897f0;
+      }
+    }
+
+    textarea {
+      min-height: 80px;
+    }
+  }
+
+  .save-changes-btn,
+  .cancel-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+
+  .save-changes-btn {
+    background-color: #3897f0;
+    color: #fff;
+
+    &:hover {
+      background-color: #2c81d0;
+    }
+  }
+
+  .cancel-btn {
+    background-color: #999;
+    color: #fff;
+
+    &:hover {
+      background-color: #7a7a7a;
+    }
+  }
+
+  .error-message {
+    margin-bottom: 1rem;
+    color: #d9534f;
+    font-weight: 600;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Tab-panel */
+.tab-panel {
+  margin-top: 2rem;
+
+  .tab-bar {
+    display: flex;
+    border-bottom: 2px solid #e0e0e0;
+  }
+
+  .tab-button {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    cursor: pointer;
+    transition: border-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      color: #3897f0;
+    }
+
+    &.active {
+      border-color: #3897f0;
+      color: #3897f0;
+    }
+  }
+
+  .tab-content {
+    padding: 1rem 0;
+    animation: fadeIn 0.3s ease-in-out;
+
+    h3 {
+      margin-bottom: 0.5rem;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666;
+    }
+  }
+}
+
+@keyframes smoothFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-fadein {
+  animation: smoothFadeIn 0.6s ease forwards;
+}
+
+.animate-scalein {
+  animation: scaleIn 0.4s ease-out forwards;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+}

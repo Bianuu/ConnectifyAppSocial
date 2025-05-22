@@ -1,0 +1,81 @@
+.signup-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+
+  .signup-card {
+    background: white;
+    border: 1px solid #dbdbdb;
+    padding: 2rem;
+    border-radius: 3px;
+    box-shadow: none;
+    text-align: center;
+    width: 350px;
+
+    .logo {
+      font-family: 'Billabong', cursive;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: #8e8e8e;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      input {
+        padding: 8px;
+        background: #fafafa;
+        border: 1px solid #dbdbdb;
+        border-radius: 3px;
+        font-size: 0.8rem;
+      }
+
+      button {
+        padding: 8px;
+        background-color: #0095f6;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        font-weight: 600;
+        margin-top: 0.5rem;
+
+        &:hover {
+          background-color: #1877f2;
+        }
+      }
+    }
+
+    .hint {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+
+      span {
+        font-weight: 600;
+        cursor: pointer;
+        color: #0095f6;
+      }
+    }
+  }
+}
+
+.input-error {
+  border: 1px solid red !important;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: -0.5rem;
+  text-align: left;
+}

@@ -1,0 +1,91 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+  padding: 1rem 2rem;
+  position: relative;
+
+  .logo {
+    flex: 1;
+    /* Alinierea modificată la stânga pentru logo */
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    .logo-text {
+      /* Efectul de animație */
+      animation: fadeIn 1.5s ease-out;
+      /* Font cu aspect special - poți schimba fontul după preferințe */
+      font-family: 'Brush Script MT', cursive, sans-serif;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+  }
+
+  .user-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+
+    .user-image {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+
+    span {
+      font-weight: 500;
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: white;
+      color: #333;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      padding: 0.5rem 0;
+      min-width: 150px;
+      display: none;
+      flex-direction: column;
+      z-index: 999;
+
+      button {
+        background: none;
+        border: none;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        text-align: left;
+        font-size: 1rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
+      }
+    }
+
+    &:hover .dropdown {
+      display: flex;
+    }
+  }
+}
+
+/* Definirea animației */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

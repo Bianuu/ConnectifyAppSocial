@@ -1,0 +1,9 @@
+C:\Users\fabi1\Desktop\ConnectifyApp\friendships\src\main\java\com\example\friendships\entities\User.java
+C:\Users\fabi1\Desktop\ConnectifyApp\friendships\src\main\java\com\example\friendships\configs\RabbitMQConfiguration.java
+C:\Users\fabi1\Desktop\ConnectifyApp\friendships\src\main\java\com\example\friendships\dtos\FriendSuggestionDTO.java
+C:\Users\fabi1\Desktop\ConnectifyApp\friendships\src\main\java\com\example\friendships\dtos\ConnectionSuggestMessageDTO.java
+C:\Users\fabi1\Desktop\ConnectifyApp\friendships\src\main\java\com\example\friendships\controllers\SuggestionController.java
+C:\Users\fabi1\Desktop\ConnectifyApp\friendships\src\main\java\com\example\friendships\configs\SuggestionConsumer.java
+C:\Users\fabi1\Desktop\ConnectifyApp\friendships\src\main\java\com\example\friendships\repositories\UserRepository.java
+C:\Users\fabi1\Desktop\ConnectifyApp\friendships\src\main\java\com\example\friendships\FriendshipsApplication.java
+C:\Users\fabi1\Desktop\ConnectifyApp\friendships\src\main\java\com\example\friendships\services\SuggestionService.java

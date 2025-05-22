@@ -1,0 +1,126 @@
+.landing-wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Imagine de fundal modernă preluată din Unsplash */
+  background: url('/fundal.png') no-repeat center center fixed;
+  background-position: center 100%;
+  background-size: cover;
+
+  /* Overlay gradient pentru a spori contrastul și lizibilitatea */
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: 1;
+  }
+
+  .landing-content {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    color: #fff;
+    padding: 40px 30px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1s ease-out;
+
+    .logo-container {
+      margin-bottom: 20px;
+
+      .logo {
+        width: 80px;
+        height: auto;
+      }
+    }
+
+    .app-name {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    .auth-card {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      button {
+        padding: 12px 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+
+      .login-btn {
+        background: #3897f0;
+        color: #fff;
+
+        &:hover {
+          background: #2a85d0;
+        }
+      }
+
+      .signup-btn {
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+  }
+}
+
+/* Animație pentru apariția conținutului */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media query pentru dispozitive mobile */
+@media (max-width: 480px) {
+  .landing-content {
+    padding: 30px 20px;
+
+    .app-name {
+      font-size: 2rem;
+    }
+
+    .tagline {
+      font-size: 0.9rem;
+    }
+  }
+}

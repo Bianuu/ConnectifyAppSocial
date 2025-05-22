@@ -1,0 +1,13 @@
+com\example\friendships\repositories\UserRepository.class
+com\example\friendships\entities\User.class
+com\example\friendships\entities\User$UserBuilder.class
+com\example\friendships\configs\RabbitMQConfiguration.class
+com\example\friendships\dtos\ConnectionSuggestMessageDTO$ConnectionSuggestMessageDTOBuilder.class
+com\example\friendships\dtos\FriendSuggestionDTO$FriendSuggestionDTOBuilder.class
+com\example\friendships\configs\SuggestionConsumer.class
+com\example\friendships\services\SuggestionService$SuggestionServiceBuilder.class
+com\example\friendships\dtos\FriendSuggestionDTO.class
+com\example\friendships\dtos\ConnectionSuggestMessageDTO.class
+com\example\friendships\services\SuggestionService.class
+com\example\friendships\FriendshipsApplication.class
+com\example\friendships\controllers\SuggestionController.class

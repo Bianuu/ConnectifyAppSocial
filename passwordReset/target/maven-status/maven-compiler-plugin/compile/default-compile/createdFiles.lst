@@ -1,0 +1,9 @@
+com\email\EmailMicroservice\DTOs\EmailDTO.class
+com\email\EmailMicroservice\config\RabbitMQConfiguration.class
+com\email\EmailMicroservice\DTOs\EmailDTO$EmailDTOBuilder.class
+com\email\EmailMicroservice\Services\ManagerServiceImplementation.class
+com\email\EmailMicroservice\config\WebConfig$1.class
+com\email\EmailMicroservice\config\MessageConsumer.class
+com\email\EmailMicroservice\config\WebConfig.class
+com\email\EmailMicroservice\Services\ManagerService.class
+com\email\EmailMicroservice\EmailMicroserviceApplication.class

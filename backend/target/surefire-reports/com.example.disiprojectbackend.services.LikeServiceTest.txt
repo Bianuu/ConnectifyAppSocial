@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.disiprojectbackend.services.LikeServiceTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 s -- in com.example.disiprojectbackend.services.LikeServiceTest
